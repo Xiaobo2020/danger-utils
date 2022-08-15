@@ -2,7 +2,9 @@
   "name": "danger-utils",
   "version": "1.0.0",
   "description": "CLI to some utilities for DangerJS",
-  "main": "index.js",
+  "bin": {
+    "danger-utils": "./src/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +18,17 @@
   "bugs": {
     "url": "https://github.com/Xiaobo2020/danger-utils/issues"
   },
-  "homepage": "https://github.com/Xiaobo2020/danger-utils#readme"
+  "homepage": "https://github.com/Xiaobo2020/danger-utils#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "conf": "^10.2.0",
+    "cross-spawn": "^7.0.3",
+    "inquirer": "^9.1.0",
+    "ora": "^6.1.2"
+  },
+  "devDependencies": {
+    "danger": "^11.1.1",
+    "danger-plugin-toolbox": "^1.31.0"
+  }
 }
