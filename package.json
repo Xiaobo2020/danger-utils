@@ -2,7 +2,9 @@
   "name": "danger-utils",
   "version": "1.0.0",
   "description": "CLI to some utilities for DangerJS",
-  "main": "index.js",
+  "bin": {
+    "danger-utils": "./src/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
